@@ -12,7 +12,7 @@ Description:
     It includes functions to load and process Monk ORB images, extract
     lesions, frames, skin, and inliers, estimate PDFs using Gaussian Mixture
     Models, and compute membership scores based on KL and L1 distances.
-"""
+
 Class to perform all the steps of the MST-AI pipeline.
     Attributes:
         msts_idir: String, directory containing ORB images.
@@ -33,7 +33,6 @@ Class to perform all the steps of the MST-AI pipeline.
         get_kl_distances: Compute KL distances between ORB PDFs and image PDF.
         get_l1_distances: Compute L1 distances between ORB PDFs and image PDF.
         get_membership_score: Compute membership scores from distances.
-"""
 
 
 You need to copy the model file (not the directory but the file itself) into the model directory.
