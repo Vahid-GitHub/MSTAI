@@ -1,8 +1,13 @@
 MST-AI: Monk Skin Lesion AI
+
 Author: VK
+
 Date: 2025-08-20
+
 Version: 1.0
+
 Description:
+
     This script implements the MST-AI pipeline for skin lesion analysis.
     It includes functions to load and process Monk ORB images, extract
     lesions, frames, skin, and inliers, estimate PDFs using Gaussian Mixture
