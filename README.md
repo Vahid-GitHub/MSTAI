@@ -12,29 +12,28 @@ Description:
     It includes functions to load and process Monk ORB images, extract
     lesions, frames, skin, and inliers, estimate PDFs using Gaussian Mixture
     Models, and compute membership scores based on KL and L1 distances.
-
- """
-  Class to perform all the steps of the MST-AI pipeline.
-  Attributes:
-      msts_idir: String, directory containing ORB images.
-      msts: List of numpy arrays, ORB samples.
-      msts_pdfs: List of fitted Gaussian Mixture Models for ORBs.
-      transforms: torchvision.transforms.Compose, image transformations.
-      model: Loaded pre-trained model for lesion extraction.
-  Methods:
-      make_transforms: Create image transformations.
-      load_model: Load a pre-trained model from a file.
-      get_lesion: Extract lesion pixels from the image.
-      get_frame: Extract frame pixels from the image.
-      get_skin: Extract skin pixels from the image.
-      get_inliers: Extract inlier pixels from the image.
-      get_monk_pixels: Load and process ORB images.
-      get_pdf: Estimate the PDF of a sample using GMM.
-      get_pdf_vals: Get PDF values for a range of points in 3D space.
-      get_kl_distances: Compute KL distances between ORB PDFs and image PDF.
-      get_l1_distances: Compute L1 distances between ORB PDFs and image PDF.
-      get_membership_score: Compute membership scores from distances.
-  """
+"""
+Class to perform all the steps of the MST-AI pipeline.
+    Attributes:
+        msts_idir: String, directory containing ORB images.
+        msts: List of numpy arrays, ORB samples.
+        msts_pdfs: List of fitted Gaussian Mixture Models for ORBs.
+        transforms: torchvision.transforms.Compose, image transformations.
+        model: Loaded pre-trained model for lesion extraction.
+    Methods:
+        make_transforms: Create image transformations.
+        load_model: Load a pre-trained model from a file.
+        get_lesion: Extract lesion pixels from the image.
+        get_frame: Extract frame pixels from the image.
+        get_skin: Extract skin pixels from the image.
+        get_inliers: Extract inlier pixels from the image.
+        get_monk_pixels: Load and process ORB images.
+        get_pdf: Estimate the PDF of a sample using GMM.
+        get_pdf_vals: Get PDF values for a range of points in 3D space.
+        get_kl_distances: Compute KL distances between ORB PDFs and image PDF.
+        get_l1_distances: Compute L1 distances between ORB PDFs and image PDF.
+        get_membership_score: Compute membership scores from distances.
+"""
 
 
 You need to copy the model file (not the directory but the file itself) into the model directory.
